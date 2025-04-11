@@ -1,6 +1,11 @@
-/*  Start  */
-.center{
-  text-align: center;
+/* Bangla Fonts Start  */
+@font-face{
+  font-family: "Li Halder Chinmoyee Unicode";
+  src: url(./Document/Fonts/font-one/Li\ Halder\ Chinmoyee\ Unicode.ttf);
 }
-/*  End  */
+
+.one{
+  font-family:"Li Halder Chinmoyee Unicode" ;
+}
+/* Bangla Fonts End  */
 
