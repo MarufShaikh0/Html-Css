@@ -1,6 +1,35 @@
-/*  Start  */
-.center{
-  text-align: center;
+/* Relative Unit Start  */
+.parent{
+  background-color: darkgray;
+  height: 200px;
+  width: 20vw;
 }
-/*  End  */
+
+.vh{
+  background-color: green;
+  height: 7vh;
+  width: 7vw;
+}
+.vw{
+  background-color: chocolate;
+  height: 10vh;
+  width: 10vw; 
+}
+.persent{
+  background-color: deeppink;
+  height: 10%;
+  width: 10%;
+  margin: 0 auto;
+}
+/* Relative Unit End  */
+
+/* Em & Rem Start  */
+ .rem-1{
+  font-size: 1rem;
+ }
+ .rem-2{
+  font-size: 2rem;
+ }
+
+/* Em & Rem End  */
 
