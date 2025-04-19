@@ -1,4 +1,23 @@
-/*  Start  */
+/* Float-Work Start  */
+img{
+ background-color: red;
+ float: right;
+ opacity: 0.3;
+ border: 3px solid yellow;
+ 
+}
+.p-1{
+ background-color: green;
+ border: 2px solid black;
+ overflow: scroll;
+ height: 200px;
+}
+.p-2{
+ background-color: blueviolet;
+ border: 3px solid black;
+ clear: both;
+}
 
-/*  End  */
+
+/* Float-Work End  */
 
