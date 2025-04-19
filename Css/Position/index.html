@@ -3,9 +3,10 @@
 <head>
  <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <!--  Cdn Link -->
+ <!--  Font-awesome Link -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
- <title></title>
+ <title>Position</title>
 
  <!-- Meta Tag For Seo -->
  <meta name="title" content=" Maruf Billah = Full Stack Web Developer ">
@@ -32,13 +33,77 @@
 </head>
 <body>
 
- <!-- Start -->
+ <!-- Position Start -->
  <div class="parent">
-   <h1><mark></mark></h1>
-   <h3>:</h3>
+   <h1><mark> Position </mark></h1>
+   <h3>Relative = নিজের জায়গা থেকে সরানো যায়</h3>
+   <h4>Absolute = প্যারেন্ট ধরে একদম নির্দিষ্ট জায়গায় বসানো যায়</h4>
+   <h4>Fixed = স্ক্রিনে আটকে থাকে</h4>
+   <h4>Sticky = স্ক্রল করলে আটকে যায়</h4>
+   <h4>Static = সাধারণ flow অনুযায়ী থাকে</h4>
+ </div>
+ <!--Position End --> <hr>
+ <!-- Sticky Position Start -->
+ <div class="parent">
+  <h1><mark> Sticky Position </mark></h1>
+  <h3>স্ক্রল করলে আটকে যায়</h3>
+  <h5>sticky: এটি relative এবং fixed পজিশনের একটি সংমিশ্রণ। একটি sticky এলিমেন্ট স্বাভাবিকভাবে relative এলিমেন্টের মতো আচরণ করে। কিন্তু যখন আপনি পেজ স্ক্রোল করতে করতে একটি নির্দিষ্ট থ্রেশহোল্ডে (threshold) পৌঁছান (যা top, bottom, left, right প্রপার্টি দিয়ে সেট করা হয়), তখন এটি fixed এলিমেন্টের মতো ভিউপোর্টে আটকে যায়। এটি হেডার বা সাইডবারের মতো এলিমেন্টের জন্য খুব কার্যকর, যা স্ক্রোল করার সময় একটি নির্দিষ্ট স্থানে দৃশ্যমান থাকা প্রয়োজন</h5>
+</div>
+
+<header>
+ <nav class="navbar">
+   <div class="nav-container">
+    <div class="nav-left">
+      <a class="nav-left-link" href="#"><img class="nav-left-link-img" src="./assets/Icon/favicon-32x32.png" alt="Image" width="30"></a>
+      <h1 class="nav-left-title">Maruf Billah</h1>
+    </div>
+    <div class="nav-right">
+      <ul class="nav-right-item-container">
+        <li class="nav-right-item"><a href="#" class="nav-right-item-link">About</a></li>
+        <li class="nav-right-item"><a href="#" class="nav-right-item-link">Service</a></li>
+        <li class="nav-right-item"><a href="#" class="nav-right-item-link">Course</a></li>
+        <li class="nav-right-item"><a href="#" class="nav-right-item-link">Html</a></li>
+        <li class="nav-right-item"><a href="#" class="nav-right-item-link">Css</a></li>
+      </ul>
+    </div>
+   </div>
+ </nav>
+</header>
+<!-- Sticky Position End --> <hr>
+<!-- Relative Position Start -->
+<div class="parent">
+ <h1><mark> Relative Position </mark></h1>
+ <h3>Relative = নিজের জায়গা থেকে সরানো যায়</h3>
+ <h4>এলিমেন্ট তার মূল জায়গায় থাকে, কিন্তু আমরা একটু উপরে-নিচে, বা ডানে-বামে সরাতে পারি।</h4>
+</div>
+<div class="icon-parent">
+ <a class="icon" href="#"> Log in : <svg class="teblar"  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-login-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2" /><path d="M3 12h13l-3 -3" /><path d="M13 15l3 -3" /></svg></a>
+</div> <br>
+<a class="icon-2" href="#">Log-In <i class="fa-solid fa-right-to-bracket"></i></a>
+
+<div class="relative-parent">
+ <div class="relative-box-1">Box-1</div>
+ <div class="relative-box-2">Box-2</div>
+ <div class="relative-box-3">Box-3</div>
+ <div class="relative-box-4">Box-4</div>
+</div>
+ <!-- Relative Position End --> <hr>
+ <!-- Absolute Position Start -->
+ <div class="parent">
+   <h1><mark> Absolute Position </mark></h1>
+   <h3>প্যারেন্ট ধরে একদম নির্দিষ্ট জায়গায় বসানো যায়</h3>
+   <h5>absolute: যখন কোনো এলিমেন্টকে position: absolute; সেট করা হয়, তখন এটি স্বাভাবিক ডকুমেন্ট ফ্লো থেকে সম্পূর্ণভাবে বেরিয়ে আসে। এরপর এটি তার নিকটতম পজিশন করা পূর্বপুরুষ (positioned ancestor) এলিমেন্টের সাপেক্ষে top, bottom, left, right প্রপার্টি ব্যবহার করে অবস্থান নেয়। যদি কোনো পজিশন করা পূর্বপুরুষ না থাকে, তবে এটি ডকুমেন্টের প্রাথমিক কন্টেইনিং ব্লক (সাধারণত <body>) এর সাপেক্ষে অবস্থান নেয়। absolute পজিশন করা এলিমেন্ট অন্য এলিমেন্টের উপর ওভারল্যাপ করতে পারে এবং এটি নিজের জন্য কোনো স্থান বরাদ্দ করে না, ফলে অন্য এলিমেন্টগুলো এমনভাবে প্রদর্শিত হয় যেন absolute এলিমেন্টটি সেখানে নেই।</h5>
  </div>
 
- <!-- End --> <hr>
+ <div class="absolute-parent">
+  <div class="absolute-box-1">Box-1</div>
+  <div class="absolute-box-2">Box-2</div>
+  <div class="absolute-box-3">Box-3</div>
+  <div class="absolute-box-4">Box-4</div>
+ </div>
+ <!-- Absolute Position End --> <hr>
+ 
+
 
   
 

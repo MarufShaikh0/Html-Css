@@ -1,4 +1,150 @@
-/*  Start  */
+/*  sticky Position Start  */
+header{
+ height: 200px;
+}
+.navbar{
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+}
+.navbar .nav-container{
+ display: flex;
+ background-color: grey;
+ padding: 0 1.3rem;
+}
+.navbar .nav-container .nav-left{
+ display: flex;
+ align-items: center;
+}
+.navbar .nav-container .nav-left .nav-left-link-img{
+ border-radius: 50px;
+}
+.navbar .nav-container .nav-left .nav-left-title{
+ font-size: 20px;
+ padding-left: 1rem;
+ letter-spacing: 0.5px;
+ color: white;
+}
+.navbar .nav-container .nav-right{
+ margin-left: auto;
+}
+.navbar .nav-container .nav-right .nav-right-item-container{
+ display: flex;
+}
+.navbar .nav-container .nav-right .nav-right-item{
+ list-style: none;
+ margin: 1rem;
+}
+.navbar .nav-container .nav-right .nav-right-item-link{
+ text-decoration: none;
+ color: white;
+ font-size: 1rem;
+ letter-spacing: 0.1rem;
+}
+.navbar .nav-container .nav-right .nav-right-item-link:hover{
+ text-decoration: none;
+ color: #322;
+}
+/*  sticky Position End  */
+/*  Relative Position Start  */
+.icon-parent{
+ margin-bottom: 10px;
+}
+.icon{
+ background-color: tomato;
+ display: inline-block;
+ text-decoration: none;
+ color: white;
+ width: 100px;
+ height: 30px;
+ padding: 0 0 .7rem 1rem;
+ border-radius: 10px;
+}
+.teblar{
+ position: relative;
+ left: 5px;
+ top: 9px;
+}
+.icon-2{
+display: inline-block;
+background-color: tan;
+color: white;
+text-decoration: none;
+padding: 20px 0;
+width: 150px;
+height: 25px;
+font-size: 22px;
+text-align: center;
+border-radius: 15px;
 
-/*  End  */
+}
+i{
+ position: relative;
+ left: 15px;
+ top: 3px;
+}
+.relative-parent{
+ border: 1px solid black;
+ width: 50%;
+}
+.relative-box-1{
+ background-color: aqua;
+ height: 50px;
+ width: 100px;
+ position: relative;
+ left: 100px;
+}
+.relative-box-2{
+ background-color: gray;
+ height: 50px;
+ width: 100px;
+}
+.relative-box-3{
+ background-color: green;
+ height: 50px;
+ width: 100px;
+}
+.relative-box-4{
+ background-color: yellow;
+ height: 50px;
+ width: 100px;
+}
+/*  Relative Position End  */
+/*  Absolute Position Start  */
+.absolute-parent{
+ border: 1px solid black;
+ width: 50%;
+ position: relative;
+ height: 250px;
+}
+.absolute-box-1{
+ background-color: aqua;
+ height: 50px;
+ width: 100px;
+ position: absolute;
+ right: 0;
+}
+.absolute-box-2{
+ background-color: gray;
+ height: 50px;
+ width: 100px;
+ position: absolute;
+ bottom: 0;
+}
+.absolute-box-3{
+ background-color: green;
+ height: 50px;
+ width: 100px;
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ margin-left:-50px;
+ margin-top:-25px;
+}
+.absolute-box-4{
+ background-color: yellow;
+ height: 50px;
+ width: 100px;
+}
+/*  Absolute Position End  */
 
