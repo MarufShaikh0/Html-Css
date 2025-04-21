@@ -1,4 +1,128 @@
-/*  Start  */
+body{
+ min-height: 100vh;
+}
 
-/*  End  */
+/* Axis Start */
+.axis-parent{
+ width: 400px;
+ height: 200px;
+ border: 1px solid black;
+ display: flex;
+ gap: 1rem;
+ align-items: flex-end;
+}
+.box-1{
+ background-color: green;
+ width: 100px;
+ min-height: 150px;
+}
+.box-2{
+ background-color: greenyellow;
+ width: 250px;
+ min-height: 100px;
+}
+.box-3{
+ background-color: yellow;
+ width: 200px;
+ min-height: 150px;
+}
+.box-4{
+ background-color: green;
+ width: 300px;
+ min-height: 200px;
+}
+.box-5{
+ background-color: pink;
+ width: 150px;
+ min-height: 50px;
+}
+.box-6{
+ background-color: green;
+ width: 300px;
+ min-height: 200px;
+}
+/* Axis End */
+
+/* Row-Column Reverse Start */
+.row-parent{
+ width: 400px;
+ height: 200px;
+ border: 1px solid black;
+ display: flex;
+ flex-direction: row-reverse;
+ justify-content: center;
+ align-items: flex-end;
+}
+.column-parent{
+ width: 400px;
+ height: 200px;
+ border: 1px solid black;
+ display: flex;
+ flex-direction: column-reverse;
+}
+.boxx-1{
+ background-color: green;
+ width: 100px;
+ height: 50px;
+}
+.boxx-2{
+ background-color: greenyellow;
+ width: 250px;
+ height: 50px;
+}
+.boxx-3{
+ background-color: yellow;
+ min-width: 200px;
+ height: 150px;
+}
+.boxx-4{
+ background-color: green;
+ min-width: 300px;
+ height: 200px;
+}
+.boxx-5{
+ background-color: pink;
+ min-width: 150px;
+ height: 50px;
+}
+.boxx-6{
+ background-color: green;
+ min-width: 300px;
+ height: 200px;
+}
+/* Row-Column Reverse End */
+
+/* Space Start  */
+.space-parent{
+ width: 400px;
+ height: 300px;
+ border: 1px solid black;
+ display: flex;
+ gap: 10px;
+}
+.space-parent >p{
+ flex: 1;
+}
+.p-1{
+ /* width: 50%; */
+ /* flex: 1; */
+ background-color: blueviolet;
+}
+.p-2{
+ /* width: 50%; */
+ /* flex: 1; */
+ background-color: tan;
+}
+.p-3{
+ /* width: 50%; */
+ /* flex: 1; */
+ background-color: tomato;
+}
+/* Space End  */
+
+
+
+
+
+
 
