@@ -1,0 +1,41 @@
+/* Shape Start  */
+.circle-1{
+ width: 100px;
+ height: 100px;
+ background-color: green;
+ border-radius: 50%;
+}
+
+.triangle-1{
+ width: 0;
+ height: 0;
+ border-left: 50px solid transparent;
+ border-right: 50px solid transparent;
+ border-bottom: 100px solid red;
+}
+.triangle-2{
+ width: 0;
+ height: 0;
+ border-left: 50px solid transparent;
+ border-right: 50px solid transparent;
+ border-top: 100px solid red;
+}
+
+.clip-path-1{
+ width: 100px;
+ height: 200px;
+ background-color: blueviolet;
+ clip-path: polygon(29.8% 0%, 50.4% 15.3%, 70.2% 0%, 90.2% 9.8%, 100% 34.3%, 80.2% 70.5%, 50.4% 100%, 19.8% 70.5%, 0% 34.3%, 9.8% 9.8%);
+ background-image: url(https://images.pexels.com/photos/29865666/pexels-photo-29865666/free-photo-of-stunning-view-of-the-kaaba-and-abraj-al-bait-in-makkah.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+
+.flex{
+ display: flex;
+ align-items: center;
+}
+/* Shape End  */
+

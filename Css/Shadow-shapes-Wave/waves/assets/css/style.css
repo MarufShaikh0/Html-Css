@@ -1,0 +1,31 @@
+/* Wave Start  */
+.wave-1{
+ border: 1px solid black;
+ width: 600px;
+ height: 200px;
+ background-image: url(wave\ .svg);
+ background-repeat: no-repeat;
+ background-size: contain;
+ background-position: center;
+}
+.link-1{
+ border: 1px solid black;
+ width: 200px;
+ height: 200px;
+ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='40' fill='red' /%3E%3C/svg%3E%0A");
+ background-repeat: no-repeat;
+}
+.link-2{
+ border: 1px solid black;
+ width: 100%;
+ height: 300px;
+ margin-top: 10px;
+ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%230099ff' fill-opacity='1' d='M0,256L15,245.3C30,235,60,213,90,176C120,139,150,85,180,96C210,107,240,181,270,192C300,203,330,149,360,144C390,139,420,181,450,181.3C480,181,510,139,540,144C570,149,600,203,630,202.7C660,203,690,149,720,112C750,75,780,53,810,85.3C840,117,870,203,900,202.7C930,203,960,117,990,117.3C1020,117,1050,203,1080,218.7C1110,235,1140,181,1170,186.7C1200,192,1230,256,1260,250.7C1290,245,1320,171,1350,128C1380,85,1410,75,1425,69.3L1440,64L1440,320L1425,320C1410,320,1380,320,1350,320C1320,320,1290,320,1260,320C1230,320,1200,320,1170,320C1140,320,1110,320,1080,320C1050,320,1020,320,990,320C960,320,930,320,900,320C870,320,840,320,810,320C780,320,750,320,720,320C690,320,660,320,630,320C600,320,570,320,540,320C510,320,480,320,450,320C420,320,390,320,360,320C330,320,300,320,270,320C240,320,210,320,180,320C150,320,120,320,90,320C60,320,30,320,15,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+ background-repeat: no-repeat;
+ cursor: pointer;
+
+}
+/* Wave End  */
+
+
+
