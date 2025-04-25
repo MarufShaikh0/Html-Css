@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <!--  Cdn Link -->
    
- <title></title>
+ <title>Backgrond Image</title>
 
  <!-- Meta Tag For Seo -->
  <meta name="title" content=" Maruf Billah = Full Stack Web Developer ">
@@ -30,15 +30,37 @@
  <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 <body>
-  <!--  Start -->
-  <div class="parent">
-    <h1><mark></mark></h1>
-    <h3>:</h3>
+ 
+  <!-- Background Image Start -->
+  <div class="background-size">
+    <h1><mark>Backgrond Image</mark></h1>
   </div>
-  
-  <!--  End --> <hr>
 
-  
+  <div class="background-size">
+    <h2> background Size : </h2>
+    <h4>contain: পুরো ছবি দেখাও, প্রয়োজনে খালি জায়গা রাখো।</h4>
+    <h4>background-size: cover; দিলে parent-div এর 100% width+Height পাবে ।</h4>
+    <h5>100% → background image এর প্রস্থ (width) হবে তার container-এর 100%। <br> 80% → background image এর উচ্চতা (height) হবে তার container-এর 80%। </h5>
+    <h5>background-size: 100px 500px; 1=width/2=Height</h5>
+  </div>
+  <div class="box-parent"></div>
+  <!-- Background Image End --> <hr>
+
+  <!-- Multiple Background Image Start -->
+  <div class="multiple-image">
+    <h2>Multiple Image</h2>
+    <h4><span class="size">Link Set :</span> background-image: url('image1.png'), url('image2.jpg'), url('image3.gif'); এখানে `image1.png` থাকবে সবার উপরে, তার নিচে `image2.jpg`, এবং সবার নিচে `image3.gif`।</h4>
+    <h6> <span class="size">repeat :</span> background-image: url('image1.png'), url('image2.jpg');background-repeat: no-repeat, repeat-x; /* image1 রিপিট হবে না, image2 অনুভূমিকভাবে রিপিট হবে */</h6>
+    <h4><span class="size">Position :</span> background-image: url('image1.png'), url('image2.jpg');background-position: center, bottom left; /* image1 মাঝখানে, image2 নিচে বামে */</h4>
+    <h4><span class="size">Size :</span> background-image: url('image1.png'), url('image2.jpg');background-size: contain, 50% auto; /* image1 contain হবে, image2 প্রস্থের 50% নেবে উচ্চতা auto */</h4>
+    
+    <div class="multiple-box"></div>
+  </div>
+  <!-- Multiple Background Image End -->
+
 </body>
 
 </html>
+
+
+

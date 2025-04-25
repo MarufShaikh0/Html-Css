@@ -1,0 +1,70 @@
+.flex{
+ display: flex;
+ gap: 1rem;
+}
+
+/* Linear Gradient Start  */
+.simple-background{
+ width: 200px;
+ height: 200px;
+ border: 1px solid black;
+ background-image: linear-gradient( to right, #ff0000, #ffff00);
+}
+
+.striped-background{
+ width: 200px;
+ height: 200px;
+ border: 1px solid black;
+ background-image: linear-gradient(to bottom, #ff0000 0%, #ff0000 50%, #0000ff 50%, #0000ff 100%);
+}
+.striped-background-2{
+ width: 200px;
+ height: 200px;
+ border: 1px solid black;
+ background-image: linear-gradient(to right , #9b59b6 0%, #9b59b6 20%, #1abc9c 20%, #1abc9c 50%,#ff7979 50%,#ff7979 100%);
+}
+
+.image-overlay{
+ width: 300px;
+ height: 200px;
+ border: 1px solid black;
+ background-image: linear-gradient(rgba(1,1,2,0.5), rgba(179, 57, 226,0.7) ), url(../image/image-3.jpg) ;
+ background-size: cover;
+ background-position: center;
+}
+.image-overlay-2{
+ width: 300px;
+ height: 200px;
+ border: 1px solid black;
+ background-image: linear-gradient(rgba(1, 151, 255 ,0.6),rgba(87, 241, 9 ,0.3)), url(../image/image-4.jpg);
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+.gradient-btn-1{
+ display: flex;
+ text-decoration: none;
+ width: 120px;
+ height: 50px;
+ align-items: center;
+ justify-content: center;
+ border-radius: 5px;
+ color: white;
+ background-image: linear-gradient(to right , #4cd137 , #00a8ff);
+}
+.gradient-btn-2{
+ display: flex;
+ text-decoration: none;
+ width: 120px;
+ height: 50px;
+ align-items: center;
+ justify-content: center;
+ border-radius: 5px;
+ background-image: linear-gradient(to right ,#353b48 ,#192a56);
+ cursor: pointer;
+}
+/* Linear Gradient End  */
+
+
+
