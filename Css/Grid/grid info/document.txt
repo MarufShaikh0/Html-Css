@@ -35,27 +35,8 @@ google Font Test Link :
     font-family: "Inter", sans-serif;
     font-family: "Poppins", sans-serif;
 
-@media test :
-   @media (max-width: 576px) {
-
-   }
-
-  @media (max-width: 768px) {
-    
-  }
-
-  @media (max-width: 992px) {
-
-  }
-
-  @media (max-width: 1200px) {
-
-  }
-  
-  @media (max-width: 1400px) {
-
-  }
-  -----
+@Min-Width :
+ ----
   @media (min-width: 576px) {
     .container {
       max-width: 540px;
@@ -85,6 +66,80 @@ google Font Test Link :
       max-width: 1320px;
     }
   }
+ 
+@max-width : 
+    /* বেস স্টাইল (বড় স্ক্রিনের জন্য সর্বোচ্চ প্রস্থ) */
+ .container {
+  max-width: 1320px; /* ধরে নিচ্ছি এটি আপনার বৃহত্তম ব্রেকপয়েন্টের max-width */
+  margin: 0 auto; /* সেন্টারিং এর জন্য */
+  padding: 0 15px; /* সাইড প্যাডিং */
+ }
+
+ /* 1400px পর্যন্ত স্ক্রিনের জন্য (যদি বেস স্টাইল 1320px হয়, তবে এই কোয়েরি প্রয়োজন নাও হতে পারে, বা অন্য স্টাইল থাকতে পারে) */
+ /*
+  @media (max-width: 1400px) {
+   .container {
+    max-width: 1320px;
+   }
+  } */
+
+  /* 1200px পর্যন্ত স্ক্রিনের জন্য */
+ @media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+ }
+
+  /* 992px পর্যন্ত স্ক্রিনের জন্য */
+ @media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+ }
+
+ /* 768px পর্যন্ত স্ক্রিনের জন্য */
+ @media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+ }
+
+ /* 576px পর্যন্ত স্ক্রিনের জন্য */
+ @media (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+ }
+
+  /* 540px এর নিচে (যদি প্রয়োজন হয়) */
+
+ @media (max-width: 539px) {
+  .container {
+    max-width: 100%; // বা অন্য কোনো ছোট মান বা শুধু প্যাডিং থাকুক
+    padding: 0 10px; // প্যাডিং কমাতে পারেন
+  }
+ } 
+
+  @media (max-width: 576px) {
+
+   }
+
+  @media (max-width: 768px) {
+    
+  }
+
+  @media (max-width: 992px) {
+
+  }
+
+  @media (max-width: 1200px) {
+
+  }
+  
+  @media (max-width: 1400px) {
+
+  }
+  ------
  
 Responsive Width-Height-Body-* & Image :
   *{

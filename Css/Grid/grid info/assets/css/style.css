@@ -1,0 +1,81 @@
+
+
+/* Common Css Start */
+body{
+     min-height: 100vh;
+     font-family: "Roboto", sans-serif;
+}
+.container{
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+}
+a{
+     text-decoration: none;
+}
+li{
+     list-style: none;
+}
+.title{
+     text-align: center;
+     background-color: tomato;
+     padding: 1rem ;
+     border-radius: 20px;
+     /* margin: 0 auto; */
+     width: 25%;
+     color: white;
+     cursor: pointer; 
+}
+.title:hover{
+     color: wheat; 
+ }
+/*  Common Css End */
+
+/*  Header Start  */
+.header-container{
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0.5rem 1.5rem;
+}
+header{
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+     background-color: #FFFFFF;    
+}
+.header-left .header-title a{
+     color: rgba(0, 0, 0, 0.671);
+     font-weight: 700;
+}
+.header-left .header-title a:hover{
+     color: gray;
+     text-decoration: underline;
+}
+.nan-item-conteiner{
+     display: flex;
+     flex-wrap: wrap;
+     gap: 1rem;
+     align-items: center;
+}
+.nan-item-conteiner .nav-item .nav-item-link{
+     color: black;
+     font-size: .875rem;
+     font-weight: 400;
+}
+.nan-item-conteiner .nav-item .nav-item-link:hover{
+     color: gray;
+     text-decoration: underline;
+}
+/* Header End  */
+
+/*   Start */
+
+
+
+
+
+/*   End */
+
+
