@@ -21,7 +21,7 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
      
-     <title></title>
+     <title>Grid Information</title>
 
      <!-- Favicon -->
      <link rel="shortcut icon" href="./assets/Icon/favicon-32x32.png" type="image/x-icon">
@@ -33,56 +33,386 @@
 <body>
   <!-- Header Start -->
   <header class="container ">
-     <div class="header-container ">
-          <div class="header-left">
-             <h1 class="header-title"> <a href="#">Maruf Billah</a></h1>
-          </div>
-
-          <div class="header-right">
-               <nav>
+      <div class="header-container ">
+           <div class="header-left">
+              <h1 class="header-title"> <a href="#">Grid Information</a></h1>
+           </div>
+ 
+           <div class="header-right">
+                <nav>
                     <ul class="nan-item-conteiner">
-                         <li class="nav-item"><a class="nav-item-link" href="#">Header</a></li>
-                         <li class="nav-item"><a class="nav-item-link" href="#">Header</a></li>
-                         <li class="nav-item"><a class="nav-item-link" href="#">Header</a></li>
-                         <li class="nav-item"><a class="nav-item-link" href="#">Header</a></li>
-                         <li class="nav-item"><a class="nav-item-link" href="#">Header</a></li>
-                         <li class="nav-item"><a class="nav-item-link" href="#">Header</a></li>
-                         <li class="nav-item"><a class="nav-item-link" href="#">Header</a></li>
-                         <li class="nav-item"><a class="nav-item-link" href="#">Header</a></li>
+                       <li class="nav-item"><a class="nav-item-link" href="#Grid-Info">Grid-Info</a></li>
+                       <li class="nav-item"><a class="nav-item-link" href="#columns">columns</a></li>
+                       <li class="nav-item"><a class="nav-item-link" href="#rows">rows</a></li>
+                       <li class="nav-item"><a class="nav-item-link" href="#gap">gap</a></li>
+                       <li class="nav-item"><a class="nav-item-link" href="#responsive">responsive</a></li>
+                       <li class="nav-item"><a class="nav-item-link" href="#Display">Display</a></li>
+                       <li class="nav-item"><a class="nav-item-link" href="#Auto">Auto</a></li>
+                       <li class="nav-item"><a class="nav-item-link" href="#Image">Image</a></li>
+
+
+                       <li class="nav-item"><a class="nav-item-link" href="#Shortcut">Shortcut</a></li>
                     </ul>
-               </nav>
-
-          </div>
-     </div>
-
+                </nav>
+           </div>
+      </div>
   </header>
   <!-- Header End -->
 
-  <!--   Start -->
-  <section class="container" id="">
-      <div class="-container">
+
+
+  <!-- Grid Info  Start -->
+  <section class="container" id="Grid-Info">
+      <div class="info-container">
           <div class="title-container">
-              <h2 class="title">Maruf Billah</h2>
+              <h2 class="title">Grid Information</h2>
+          </div> 
+ 
+          <div class="Normal-Grid">
+             <h3 class="sub-title"> Grid দুইভাবে কাজ করে  : </h3>
+             <h4> grid-template-columns: </h4>
+             <h4> grid-template-rows: </h4>
+          </div>
+      </div> 
+  </section>
+  <!-- Grid Info  End --> <hr>
+
+
+
+  <!-- columns  Start -->
+  <section class="container" id="columns">
+      <div class="coulmns-container">
+          <div class="title-container">
+             <h2 class="title">grid-template-Columns </h2>
           </div> 
 
-          <div class="sub-title-container">
-              <h3 class="sub-title">Maruf Billah : </h3>
-              <h4> : </h4>
-          </div>
-          
-          <div class="-sub-container">
-               <div class="-left">
-                    
-               </div>
+          <div class="columns">
+              <h4> grid-template-columns: 1fr 1fr 1fr; মানে ৩টি সমান প্রস্থের কলাম।</h4>
+		 	  <h4>grid-template-columns: repeat(3, 1fr); মানেও একই, ৩টি সমান প্রস্থের কলাম তৈরি হবে।</h4>
+		 	  <h5>grid-template-columns: repeat(3, minmax(0, 1fr)); মানে ৩টি কলাম থাকবে, প্রতিটি কলাম সমান জায়গা নেবে কিন্তু প্রয়োজন অনুযায়ী ০ প্রস্থ পর্যন্ত ছোট হতে পারবে।</h5>
+             
+              <h2> Example : </h2>
+		 	  <h3>grid-template-columns: 1fr 1fr 1fr/ 100px 100px 100px :</h3>
+		 	  <div class="parent-c">
+                  <div class="box-1">box-1</div>
+                  <div class="box-2">box-2</div>
+                  <div class="box-3">box-3</div>
+                  <div class="box-4">box-4</div>
+                  <div class="box-5">box-5</div>
+                  <div class="box-6">box-6</div>
+              </div>
 
-               <div class="-right">
+		 	  <h3>grid-template-columns: repeat(3, 1fr) : </h3>
+		 	  <div class="parent-repeat">
+                  <div class="box-1">box-1</div>
+                  <div class="box-2">box-2</div>
+                  <div class="box-3">box-3</div>
+                  <div class="box-4">box-4</div>
+                  <div class="box-5">box-5</div>
+                  <div class="box-6">box-6</div>
+              </div>
 
-               </div>
+		 	  <h3>grid-template-columns: repeat(3, minmax(0, 1fr)) : </h3>
+		 	  <div class="parent-minmax">
+                  <div class="box-1">box-1</div>
+                  <div class="box-2">box-2</div>
+                  <div class="box-3">box-3</div>
+                  <div class="box-4">box-4</div>
+                  <div class="box-5">box-5</div>
+                  <div class="box-6">box-6</div>
+              </div>
           </div>
-      </div>
-      
+      </div> 
   </section>
-  <!--   End -->
+  <!-- columns  End --> <hr>
+
+
+
+  <!-- row  Start -->
+  <section class="container" id="rows">
+      <div class="rows-container">
+          <div class="title-container">
+             <h2 class="title">grid-template-rows </h2>
+          </div> 
+
+          <div class="rows">
+              <h4>grid-template-rows: 100px auto 50px; মানে ৩টি সারি হবে, প্রথমটি ১০০px, দ্বিতীয়টি কন্টেন্ট অনুযায়ী এবং তৃতীয়টি ৫০px উচ্চতার। </h4>
+              <h5>grid-template-rows: repeat(3, 100px); মানে ৩টি সারির প্রত্যেকটির উচ্চতা ১৫০px হবে।</h5>
+		 	  
+             
+              <h2> Example : </h2>
+		 	  <h3>grid-template-rows: 100px auto 50px; :</h3>
+		 	  <div class="parent-r">
+                  <div class="box-1">box-1</div>
+                  <div class="box-2">box-2</div>
+                  <div class="box-3">box-3</div>
+                  <div class="box-4">box-4</div>
+                  <div class="box-5">box-5</div>
+                  <div class="box-6">box-6</div>
+              </div>
+
+		 	  <h3>ggrid-template-rows: repeat(3, 100px) : </h3>
+		 	  <div class="parent-r-minmax">
+                  <div class="box-1">box-1</div>
+                  <div class="box-2">box-2</div>
+                  <div class="box-3">box-3</div>
+                  <div class="box-4">box-4</div>
+                  <div class="box-5">box-5</div>
+                  <div class="box-6">box-6</div>
+              </div>
+          </div>
+      </div> 
+  </section>
+  <!-- rows  End --> <hr>
+
+
+
+  <!-- Gap Start -->
+  <section class="container" id="gap">
+      <div class="gap-container">
+          <div class="title-container">
+             <h2 class="title">grid-Gap </h2>
+          </div> 
+
+          <div class="gap">
+              <h4> gap:5px চারদিকে সমান-ভাবে 5px Gap পাবে ।</h4>
+              <h5>grid-column-gap:5px কলাম বরাবর 5px Gap পাবে ।</h5>
+              <h5>grid-row-gap:5px Rows বরাবর 5px Gap পাবে ।</h5>
+		 	  
+             
+              <h2> Example : Grid-gap </h2>
+
+		 	  <h4>gap:5px</h4>
+		 	  <div class="parent-gap">
+                  <div class="box-1">box-1</div>
+                  <div class="box-2">box-2</div>
+                  <div class="box-3">box-3</div>
+                  <div class="box-4">box-4</div>
+                  <div class="box-5">box-5</div>
+                  <div class="box-6">box-6</div>
+              </div>
+
+		 	  <h4>grid-row-gap:5px</h4>
+		 	  <div class="parent-g-r-gap">
+                  <div class="box-1">box-1</div>
+                  <div class="box-2">box-2</div>
+                  <div class="box-3">box-3</div>
+                  <div class="box-4">box-4</div>
+                  <div class="box-5">box-5</div>
+                  <div class="box-6">box-6</div>
+              </div>
+
+		 	  <h3>grid-column-gap:5px : </h3>
+		 	  <div class="parent-c-gap">
+                  <div class="box-1">box-1</div>
+                  <div class="box-2">box-2</div>
+                  <div class="box-3">box-3</div>
+                  <div class="box-4">box-4</div>
+                  <div class="box-5">box-5</div>
+                  <div class="box-6">box-6</div>
+              </div>
+          </div>
+      </div> 
+  </section>
+  <!-- Gap  End --> <hr>
+
+
+
+  <!-- responsive Start -->
+  <section class="container" id="responsive">
+      <div class="responsive-container">
+          <div class="title-container">
+             <h2 class="title">responsive Grid </h2>
+          </div> 
+
+          <div class="responsive">
+              <h4> ফ্লেক্সিবল ইউনিট (fr, %, auto): </h4>
+              <h5>fr (fraction): এটি গ্রিড কন্টেইনারের "উপলব্ধ স্থান" (available space) এর একটি অংশকে বোঝায়। যেমন 1fr 1fr 1fr দিলে ৩টি কলাম সমান স্থান নেবে। স্ক্রিন ছোট হলে কলামগুলোও ছোট হবে, বড় হলে বড় হবে, কিন্তু সমানুপাতিক হার বজায় রাখবে।</h5>
+              <h5>% (শতাংশ): কলাম বা সারির আকার প্যারেন্ট এলিমেন্টের আকারের শতাংশ হিসেবে নির্ধারণ করে।</h5>
+              <h5>auto: কন্টেন্টের আকার অনুযায়ী উচ্চতা বা প্রস্থ স্বয়ংক্রিয়ভাবে সেট হয়।</h5>
+		 	  
+             
+              <h2> Example : grid-template-Columns/ grid-template-rows: </h2>
+
+		 	  <h4>Example : grid-template-Columns:1fr 2fr 1fr / grid-template-rows: 2fr 3fr ;</h4>
+		 	  <div class="parent-column-row">
+                  <div class="box-1">box-1</div>
+                  <div class="box-2">box-2</div>
+                  <div class="box-3">box-3</div>
+                  <div class="box-4">box-4</div>
+                  <div class="box-5">box-5</div>
+                  <div class="box-6">box-6</div>
+              </div>
+
+		 	  <h4>Example : grid-template-columns: 20% 50% 30%; / grid-template-rows: 50% 50%; ;</h4>
+		 	  <div class="parent-cr-row">
+                  <div class="box-1">box-1</div>
+                  <div class="box-2">box-2</div>
+                  <div class="box-3">box-3</div>
+                  <div class="box-4">box-4</div>
+                  <div class="box-5">box-5</div>
+                  <div class="box-6">box-6</div>
+              </div>
+          </div>
+      </div> 
+  </section>
+  <!-- responsive  End --> <hr>
+
+
+
+  <!-- Shortcut Start -->
+  <section class="container" id="Shortcut">
+      <div class="Shortcut-container">
+          <div class="title-container">
+             <h2 class="title"> Shortcut  </h2>
+          </div> 
+
+          <div class="Shortcut">
+              <h3>Grid template :2fr 3fr / 1fr 2fr = এটা আসলে grid-template এর shorthand, যার পূর্ণরূপ হলো: grid-template-rows: 2fr 3fr; grid-template-columns: 1fr 2fr; </h3>
+              <h3>grid-template: repeat(3, 1fr) / repeat(3, 2fr); grid-template: হচ্ছে shorthand যা এই দুইটার সংক্ষিপ্ত রূপ: grid-template-rows: repeat(3, 1fr); grid-template-columns: repeat(3, 2fr);</h3>
+              <h5></h5>
+		 	  
+             
+              <h2>  </h2>
+
+		 	  <h4>Example : Grid template :2fr 3fr / 1fr 2fr = grid-template: row / column;</h4>
+		 	  <div class="parent-shortcut">
+                  <div class="box-1">box-1</div>
+                  <div class="box-2">box-2</div>
+                  <div class="box-3">box-3</div>
+                  <div class="box-4">box-4</div>
+                  <div class="box-5">box-5</div>
+                  <div class="box-6">box-6</div>
+              </div>
+
+
+		 	  <h4>Example : grid-template: repeat(3, 1fr) / repeat(3, 2fr) = grid-template: row / column;</h4>
+		 	  <div class="parent-repeatt">
+                  <div class="box-1">box-1</div>
+                  <div class="box-2">box-2</div>
+                  <div class="box-3">box-3</div>
+                  <div class="box-4">box-4</div>
+                  <div class="box-5">box-5</div>
+                  <div class="box-6">box-6</div>
+              </div>
+          </div>
+      </div> 
+  </section>
+  <!-- Shortcut  End --> <hr>
+
+
   
+  <!-- Display Start -->
+  <section class="container" id="Display">
+      <div class="Display-container">
+          <div class="title-container">
+             <h2 class="title"> Display  </h2>
+          </div> 
+
+          <div class="Display">
+              <h3>Grid template :2fr 3fr / 1fr 2fr = এটা আসলে grid-template এর shorthand, যার পূর্ণরূপ হলো: grid-template-rows: 2fr 3fr; grid-template-columns: 1fr 2fr; </h3>
+              <h3>grid-template: repeat(3, 1fr) / repeat(3, 2fr); grid-template: হচ্ছে shorthand যা এই দুইটার সংক্ষিপ্ত রূপ: grid-template-rows: repeat(3, 1fr); grid-template-columns: repeat(3, 2fr);</h3>
+              <h5></h5>
+		 	  
+             
+              <h2>  </h2>
+
+		 	  <h4>Web-Display :</h4>
+		 	  <div class="parent-display">
+                  <div class="header">Header</div>
+                  <div class="menu">Menu</div>
+                  <div class="Content">Content</div>
+                  <div class="Footer">footer</div>
+              </div>
+
+
+		 	  <h4>Grid Area System :</h4>
+		 	  <div class="parent-area">
+                  <div class="header-a">Header</div>
+                  <div class="menu-a">Menu</div>
+                  <div class="Content-a">Content</div>
+                  <div class="Footer-a">footer</div>
+              </div>
+          </div>
+      </div> 
+  </section>
+  <!-- Display  End --> <hr>
+
+
+  <!-- Auto  Start -->
+  <section class="container" id="Auto">
+      <div class="auto-container">
+          <div class="title-container">
+             <h2 class="title">Auto :  </h2>
+          </div> 
+
+          <div class="auto">
+              <h4> </h4>
+		 	  <h4></h4>
+		 	  <h5></h5>
+             
+              <h2> Example : Auto-fit / Auto-fil</h2>
+		 	  <h3>Auto Fit :</h3>
+		 	  <div class="parent-af">
+                  <div class="box-af-1">box-1</div>
+                  <div class="box-af-2">box-2</div>
+                  <div class="box-af-3">box-3</div>
+                  <div class="box-af-4">box-4</div>
+                  <div class="box-af-5">box-5</div>
+                  <div class="box-af-6">box-6</div>
+                  <div class="box-af-7">box-7</div>
+                  <div class="box-af-8">box-8</div>
+                  <div class="box-af-9">box-9</div>
+                  <div class="box-af-10">box-10</div>
+              </div>
+          </div>
+      </div> 
+  </section>
+  <!-- Auto  End --> <hr>
+
+
+
+  <!-- Image-Grid  Start -->
+  <section class="container" id="Image">
+      <div class="Image-container">
+          <div class="title-container">
+             <h2 class="title">Image-Grid :  </h2>
+          </div> 
+
+          <div class="image">
+            <div class="vertical"><img src="./assets/image/vertical-4.jpg" alt=""> </div>
+              <div><img src="./assets/image/image-1.jpg" alt=""></div>
+              
+              <div><img src="./assets/image/image-3.jpg" alt=""></div>
+              <div><img src="./assets/image/image-4.jpg" alt=""></div>
+              <div class="big"><img src="./assets/image/image-5.jpg" alt=""></div>
+              <div><img src="./assets/image/image-6.jpg" alt=""></div>
+              
+              
+              <div><img src="./assets/image/image-9.jpg" alt=""></div>
+              <div><img src="./assets/image/image-10.jpg" alt=""></div>
+
+		 	  <div class="vertical"><img src="./assets/image/vertical-1.jpg" alt=""> </div>
+		 	  
+              <div><img src="./assets/image/image-2.jpg" alt=""></div>
+		 	  <div class="vertical"><img src="./assets/image/vertical-3.jpg" alt=""> </div>
+              <div class="horizontal"> <img src="./assets/image/hori-2.jpg" alt=""></div>
+		 	  
+		 	  <div class="vertical"><img src="./assets/image/vertical-5.jpg" alt=""> </div>
+              
+		 	  <div class="horizontal"> <img src="./assets/image/hori-1.jpg" alt=""></div>
+              <div class="vertical"><img src="./assets/image/vertical-2.jpg" alt=""> </div>
+		 	  
+              <div><img src="./assets/image/image-8.jpg" alt=""></div>
+		 	  <div class="horizontal"> <img src="./assets/image/hori-3.jpg" alt=""></div>
+		 	  <div class="horizontal"> <img src="./assets/image/hori-4.jpg" alt=""></div>
+
+		 	  <div class="big"><img src="./assets/image/image-11.jpg" alt=""> </div>
+              <div class="big"><img src="./assets/image/image-7.jpg" alt=""></div>
+          </div>
+      </div> 
+  </section>
+  <!-- Image-Grid  End --> <hr>
+
 </body>
 </html>
